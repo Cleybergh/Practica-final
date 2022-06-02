@@ -217,27 +217,4 @@ bool compararIDs(byte ID1[], byte ID2[]){
   return true;
 }
 ```
-## Funcionamiento:
 
-En la primera parte de código se pueden ver las librerias y la assignación de todos los pines.
-
-```
-using namespace std;
-
-#include <Arduino.h>
-#include <SPI.h> //llibreria pel bus SPI
-#include <MFRC522.h> //llibreria pel lector de tags RFId (MFRC522)
-#include <Wire.h> //llibreria pel bus I2C
-#include <Adafruit_BMP085.h> //libreria pel sensor de temperatura
-
-#define PIN_porta 25 //assignació del pin pel led que representa l'accés a la vivenda
-#define PIN_alarma 26 //assignació del pin pel led que representa clau (tag) incorrecta
-#define PIN_AC 27 //assignació del pin pel led que representa la activacio de l'aire acondicionat
-#define RST_PIN_ent	17    //Pin 17 per el reset del RC522 dentrada
-#define SS_PIN_ent	5  //Pin 5 per el SS (SDA o CS) del RC522 dentrada (slave select, chip select)
-#define RST_PIN_sal 4 //""de sortida
-#define SS_PIN_sal 15 //""de sortida
-//pines para el sensor bmp180, SDA: 21, SCL:22
-//SPI: miso 19 / mosi 23 / clk 18
-
-```
