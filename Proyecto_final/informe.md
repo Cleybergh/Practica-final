@@ -4,7 +4,7 @@ El proyecto va a tratar con datos de una "casa" (la temperatura y la entrada o s
 
 Aquí tenemos el diagrama de bloques de nuestro proyecto:
 
-![Diagrama_de_Bloques](Diagrama_de_bloques.PNG)
+![Diagrama_de_Bloques](Diagrama_de_Bloques.PNG)
 
 Podemos observar que los lectores MMFRC522 se encuentran en el mismo bus SPI, los dos son slave y el procesados ESP32 se encarga de llevar la información que llega a los dos por partes separadas aun que el PIN MISO y MOSI vayan en serie (tienen el mismo PIN).
 
